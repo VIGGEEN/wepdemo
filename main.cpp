@@ -94,21 +94,21 @@ bitmap_image genkeystream(size_t width, size_t height, uint64_t seed = 0) {
 
 bitmap_image xorcipherguess(const bitmap_image &keystream) {
 
-    printf("Enter reusedkeyexploit input-file:\n");
+    printf("Enter xorciphertext input-file:\n");
 
     std::string file;
     std::cin >> file;
 
     bitmap_image reusedkeyattack(file);
 
-    printf("Enter guessattack input-file:\n");
+    printf("Enter cipherguess input-file:\n");
     std::cin >> file;
 
     bitmap_image guesstext(file);
 
     bitmap_image guessattack = ixor(reusedkeyattack, guesstext);
 
-    printf("Enter guessattack output-file:\n");
+    printf("Enter cipherguess output-file:\n");
     std::cin >> file;
 
     guessattack.save_image(file);
