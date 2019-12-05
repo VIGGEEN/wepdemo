@@ -1,5 +1,5 @@
 # WEP Demo
-A demo showcasing the weakness of the WEP (Wired Equivalent Protocol).
+A quick demo showcasing the weakness of WEP (Wired Equivalent Privacy).
 
 ### Build
 >Run cmake from project root with the desired output path
